@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please sign in</title>
+    <style>
+        /* 设置背景图片 */
+        body {
+            background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F202011%2F23%2F20201123133442_ad244.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1680429725&t=13ca56ea339265493dc5f2d346641013') no-repeat fixed center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        /* 标题样式 */
+        h2 {
+            color: #fff;
+            text-shadow: 2px 2px #000;
+        }
+        /* 表单样式 */
+        .form-signin {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin input[type="text"], .form-signin input[type="password"] {
+            margin-bottom: 10px;
+        }
+        .form-signin button[type="submit"] {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        /* 响应式布局 */
+        @media (min-width: 576px) {
+            .form-signin {
+                max-width: 500px;
+            }
+        }
+        @media (min-width: 768px) {
+            .form-signin {
+                max-width: 600px;
+            }
+        }
+        @media (min-width: 992px) {
+            .form-signin {
+                max-width: 700px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .form-signin {
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" method="post" action="/login.html">
+        <h2 class="form-signin-heading">用户登录</h2>
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+        </p>
+        <input name="_csrf" type="hidden" value="70e6ea64-5c62-48a4-9932-105c74e3fb70">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+    </form>
+</div>
+</body>
+</html>
